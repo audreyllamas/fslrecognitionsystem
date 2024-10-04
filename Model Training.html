@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSL Dataset Builder</title>
+    <link rel="stylesheet" href="Model Training.css">
+</head>
+<body>
+    <header>
+        <h1>FSL Dataset Builder</h1>
+        <nav>
+            <ul>
+                <li><a href="Data Management.html">Data Management</a></li>
+                <li><a href="Model Training.html">Model Training</a></li>
+                <li><a href="Prediction & Labeling.html">Prediction & Labeling</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dataset Summary Section (same as before) -->
+        
+        <!-- New Model Training Section -->
+        <section class="model-training">
+            <h2>Model Training</h2>
+            <div class="training-config">
+                <form>
+                    <label for="selectModel">Select model:</label>
+                    <input type="text" id="selectModel" name="selectModel">
+                    
+                    <label for="learningRate">Learning Rate:</label>
+                    <input type="text" id="learningRate" name="learningRate">
+                    
+                    <label for="numEpochs">No. of Epochs:</label>
+                    <input type="text" id="numEpochs" name="numEpochs">
+                    
+                    <label for="batchSize">Batch Size:</label>
+                    <input type="text" id="batchSize" name="batchSize">
+                    
+                    <label for="selectDataset">Select Dataset:</label>
+                    <input type="text" id="selectDataset" name="selectDataset">
+                    
+                    <button type="button">Save Configurations</button>
+                </form>
+                <div class="training-buttons">
+                    <button type="button">Start Model Training</button>
+                    <button type="button">Pause Model Training</button>
+                    <button type="button">Stop Model Training</button>
+                </div>
+            </div>
+
+            <div class="training-status">
+                <h3>Training Status</h3>
+                <p>Training Status: <strong>Ongoing</strong></p>
+                <p>Current Epoch: <strong>20</strong></p>
+                <p>Total Epochs: <strong>300</strong></p>
+            </div>
+
+            <div class="real-time-logs">
+                <h3>Real-Time Logs</h3>
+                <textarea id="logs" readonly rows="10" cols="50">
+                # Sample logs here... Model training started...
+                # Epoch 1: loss=0.32, accuracy=84.5%
+                # Epoch 2: loss=0.28, accuracy=86.0%...
+                </textarea>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FSL Dataset Builder</p>
+    </footer>
+</body>
+</html>

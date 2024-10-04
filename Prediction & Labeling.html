@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSL Dataset Builder - Prediction & Labeling</title>
+    <link rel="stylesheet" href="Prediction & Labeling.css">
+</head>
+<body>
+    <header>
+        <h1>FSL Dataset Builder</h1>
+        <nav>
+            <ul>
+                <li><a href="Data Management.html">Data Management</a></li>
+                <li><a href="Model Training.html">Model Training</a></li>
+                <li><a href="Prediction & Labeling.html">Prediction & Labeling</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Prediction</h2>
+            <form>
+                <label for="dataset">Select Dataset:</label>
+                <input type="text" id="dataset" name="dataset">
+
+                <label for="parameter">Prediction Parameter:</label>
+                <input type="text" id="parameter" name="parameter">
+
+                <label for="confidence">Confidence Threshold:</label>
+                <input type="text" id="confidence" name="confidence">
+
+                <button type="button">Save Configurations</button>
+                <div class="controls">
+                    <button type="button">Start Prediction</button>
+                    <button type="button">Pause Prediction</button>
+                    <button type="button">Stop Prediction</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Prediction Results</h2>
+            <p><strong>Current Status:</strong> Completed</p>
+            <p><strong>Progress:</strong> 100%</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Source</th>
+                        <th>Link</th>
+                        <th>Label</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>284</td>
+                        <td>Youtube</td>
+                        <td>ww.yt.com</td>
+                        <td>Fine</td>
+                        <td>
+                            <button>Accept</button>
+                            <button>Edit</button>
+                            <button>Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>285</td>
+                        <td>Youtube</td>
+                        <td>ww.yt.com</td>
+                        <td>A</td>
+                        <td>
+                            <button>Accept</button>
+                            <button>Edit</button>
+                            <button>Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>286</td>
+                        <td>Youtube</td>
+                        <td>ww.yt.com</td>
+                        <td>Name</td>
+                        <td>
+                            <button>Accept</button>
+                            <button>Edit</button>
+                            <button>Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>287</td>
+                        <td>Youtube</td>
+                        <td>ww.yt.com</td>
+                        <td>Monday</td>
+                        <td>
+                            <button>Accept</button>
+                            <button>Edit</button>
+                            <button>Reject</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 FSL Dataset Builder. All rights reserved.</p>
+    </footer>
+</body>
+</html>

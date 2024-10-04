@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSL Dataset Builder</title>
+    <link rel="stylesheet" href="Data Management.css">
+</head>
+<body>
+    <header>
+        <h1>FSL Dataset Builder</h1>
+        <nav>
+            <ul>
+                <li><a href="Data Management.html">Data Management</a></li>
+                <li><a href="Model Training.html">Model Training</a></li>
+                <li><a href="Prediction & Labeling.html">Prediction & Labeling</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dataset-summary">
+            <h2>Dataset Statistics Summary</h2>
+            <p>Total entries: <strong>2408</strong></p>
+            <p>Labeled entries: <strong>2130</strong></p>
+            <p>Unlabeled entries: <strong>278</strong></p>
+            <p>Last updated: <strong>22:23 05/28/24</strong></p>
+        </section>
+
+        <section class="view-data">
+            <h2>View Data</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Source</th>
+                        <th>Link</th>
+                        <th>Label</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>284</td>
+                        <td>Youtube</td>
+                        <td>www.yt.com</td>
+                        <td>Fine</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <!-- More entries -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="web-scraping">
+            <h2>Web Scraping</h2>
+            <form>
+                <label for="website">Target website:</label>
+                <input type="text" id="website" name="website">
+                
+                <label for="frequency">Frequency:</label>
+                <input type="text" id="frequency" name="frequency">
+                
+                <label for="dataType">Data Type:</label>
+                <input type="text" id="dataType" name="dataType">
+
+                <button type="button">Save Configurations</button>
+                <button type="button">Start Web Scraping</button>
+                <button type="button">Pause Web Scraping</button>
+                <button type="button">Stop Web Scraping</button>
+            </form>
+        </section>
+
+        <section class="manual-entry">
+            <h2>Manual Entry</h2>
+            <form>
+                <label for="fileUpload">Upload File:</label>
+                <input type="file" id="fileUpload" name="fileUpload">
+                
+                <label for="source">Source:</label>
+                <input type="text" id="source" name="source">
+                
+                <label for="label">Label:</label>
+                <input type="text" id="label" name="label">
+                
+                <button type="button">Save Entry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FSL Dataset Builder</p>
+    </footer>
+</body>
+</html>
